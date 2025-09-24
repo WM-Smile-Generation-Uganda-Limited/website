@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Smile Generation Uganda" description="Building a brighter web presence with Astro.">
+  <section class="hero">
+    <p class="eyebrow">Hello there 👋</p>
+    <h1>We’re crafting a fresh web experience.</h1>
+    <p class="lede">
+      This Astro starter gives you a clean, fast foundation.
+      Customize the layout, add content, and ship your site with confidence.
+    </p>
+    <div class="cta-group">
+      <a class="cta primary" href="https://docs.astro.build" target="_blank" rel="noreferrer">
+        Explore Astro Docs
+      </a>
+      <a class="cta" href="https://astro.build/themes" target="_blank" rel="noreferrer">
+        Browse Themes
+      </a>
+    </div>
+  </section>
+
+  <section class="features">
+    <article>
+      <h2>Performance first</h2>
+      <p>Astro ships less JavaScript by default, keeping pages fast and accessible.</p>
+    </article>
+    <article>
+      <h2>Content driven</h2>
+      <p>Write in Markdown, MDX, or Astro components—mix and match freely.</p>
+    </article>
+    <article>
+      <h2>Future ready</h2>
+      <p>Integrate your favourite UI frameworks when you need interactivity.</p>
+    </article>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    display: grid;
+    gap: 1.5rem;
+    padding-block: clamp(3rem, 8vw, 5rem);
+    text-align: center;
+  }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.85rem;
+    color: rgba(15, 23, 42, 0.65);
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.5rem);
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .lede {
+    font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+    color: rgba(15, 23, 42, 0.72);
+    margin: 0 auto;
+    max-width: 50ch;
+  }
+
+  .cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    font-weight: 600;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+    background: white;
+  }
+
+  .cta.primary {
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+    color: white;
+    border: none;
+    box-shadow: 0 10px 20px -12px rgba(79, 70, 229, 0.7);
+  }
+
+  .cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -16px rgba(15, 23, 42, 0.4);
+  }
+
+  .features {
+    display: grid;
+    gap: 1.5rem;
+    padding-block: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .features article {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.75rem;
+    box-shadow: 0 10px 30px -22px rgba(15, 23, 42, 0.4);
+    text-align: left;
+  }
+
+  .features h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 780px) {
+    .hero {
+      text-align: left;
+    }
+
+    .features {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>
