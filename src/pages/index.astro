@@ -3,125 +3,195 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Smile Generation Uganda" description="Building a brighter web presence with Astro.">
-  <section class="hero">
-    <p class="eyebrow">Hello there 👋</p>
-    <h1>We’re crafting a fresh web experience.</h1>
-    <p class="lede">
-      This Astro starter gives you a clean, fast foundation.
-      Customize the layout, add content, and ship your site with confidence.
-    </p>
-    <div class="cta-group">
-      <a class="cta primary" href="https://docs.astro.build" target="_blank" rel="noreferrer">
-        Explore Astro Docs
-      </a>
-      <a class="cta" href="https://astro.build/themes" target="_blank" rel="noreferrer">
-        Browse Themes
-      </a>
-    </div>
-  </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] min-h-[400px] flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1600x900/4F7942/FFFFFF?text=Ugandan+Landscape');"></div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative px-4">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 tracking-wider">Nurturing Minds, Growing Futures</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">Empowering Uganda's youth through quality education, mental health support, and a deep connection to nature.</p>
+            <a href="#about" class="mt-8 inline-block bg-green-700 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300 transform hover:scale-105 shadow-xl text-lg">
+                Discover Our Cause
+            </a>
+        </div>
+    </section>
 
-  <section class="features">
-    <article>
-      <h2>Performance first</h2>
-      <p>Astro ships less JavaScript by default, keeping pages fast and accessible.</p>
-    </article>
-    <article>
-      <h2>Content driven</h2>
-      <p>Write in Markdown, MDX, or Astro components—mix and match freely.</p>
-    </article>
-    <article>
-      <h2>Future ready</h2>
-      <p>Integrate your favourite UI frameworks when you need interactivity.</p>
-    </article>
-  </section>
-</BaseLayout>
+    <!-- About Us Section -->
+    <section id="about" class="py-20 md:py-28 brownish-gradient">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">Who We Are</h2>
+                    <p class="text-lg text-stone-700 mb-6 leading-relaxed">
+                        WM Smile Generation Uganda Limited is a dedicated non-profit organization committed to transforming the lives of children and youth across Uganda. We believe that every child deserves the opportunity to reach their full potential.
+                    </p>
+                    <p class="text-lg text-stone-700 leading-relaxed">
+                        Our approach is holistic, combining educational programs with vital mental health support and initiatives that foster an appreciation for the natural world. We aim to build resilient, greener communities where young people can truly thrive.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/D2B48C/FFFFFF?text=Happy+Children+Learning" alt="Children in a classroom" class="rounded-lg shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Our Mission Section -->
+    <section id="mission" class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">Our Core Mission</h2>
+            <p class="max-w-3xl mx-auto text-lg text-stone-700 mb-16">We focus on three key pillars to create lasting impact and empower the next generation.</p>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Mission 1: Education -->
+                <div class="p-8 border-2 border-green-100 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="mb-4 inline-block p-4 bg-green-100 rounded-full">
+                        <svg class="h-10 w-10 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-800 mb-2">Quality Education</h3>
+                    <p class="text-stone-600">Providing access to quality learning resources and supportive educational environments to unlock every child's potential.</p>
+                </div>
+                <!-- Mission 2: Nature Awareness -->
+                <div class="p-8 border-2 border-green-100 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="mb-4 inline-block p-4 bg-green-100 rounded-full">
+                       <svg class="h-10 w-10 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0117.657 18.657z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88a3 3 0 00-4.242 4.242z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-800 mb-2">Nature Awareness</h3>
+                    <p class="text-stone-600">Fostering a love for the environment through conservation projects, tree planting, and ecological education.</p>
+                </div>
+                <!-- Mission 3: Mental Health -->
+                <div class="p-8 border-2 border-green-100 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                    <div class="mb-4 inline-block p-4 bg-green-100 rounded-full">
+                        <svg class="h-10 w-10 text-green-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-stone-800 mb-2">Mental Wellbeing</h3>
+                    <p class="text-stone-600">Offering crucial mental health support and creating safe spaces for youth to discuss their challenges and build resilience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<style>
-  .hero {
-    display: grid;
-    gap: 1.5rem;
-    padding-block: clamp(3rem, 8vw, 5rem);
-    text-align: center;
-  }
+    <!-- Call to Action: Partnership & Donation -->
+    <section class="bg-cover bg-center" style="background-image: url('https://placehold.co/1600x800/A0522D/FFFFFF?text=Earthy+Texture');">
+        <div class="bg-stone-800 bg-opacity-80 py-20 md:py-28">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Become a Part of the Change</h2>
+                <p class="max-w-3xl mx-auto text-lg mb-10">Your support can create ripples of change that last for generations. Join us in our mission to empower Ugandan youth.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="#" class="bg-green-700 text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition duration-300 transform hover:scale-105 shadow-xl text-lg w-full md:w-auto">
+                        Donate Now
+                    </a>
+                    <a href="#" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-stone-800 transition duration-300 transform hover:scale-105 text-lg w-full md:w-auto">
+                        Partner With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  .eyebrow {
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    font-size: 0.85rem;
-    color: rgba(15, 23, 42, 0.65);
-  }
+  </main>
 
-  h1 {
-    font-size: clamp(2.4rem, 6vw, 3.5rem);
-    line-height: 1.1;
-    margin: 0;
-  }
-
-  .lede {
-    font-size: clamp(1.05rem, 2.5vw, 1.2rem);
-    color: rgba(15, 23, 42, 0.72);
-    margin: 0 auto;
-    max-width: 50ch;
-  }
-
-  .cta-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1.5rem;
-    border-radius: 999px;
-    border: 1px solid rgba(15, 23, 42, 0.12);
-    font-weight: 600;
-    transition: transform 150ms ease, box-shadow 150ms ease;
-    background: white;
-  }
-
-  .cta.primary {
-    background: linear-gradient(135deg, #2563eb, #9333ea);
-    color: white;
-    border: none;
-    box-shadow: 0 10px 20px -12px rgba(79, 70, 229, 0.7);
-  }
-
-  .cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px -16px rgba(15, 23, 42, 0.4);
-  }
-
-  .features {
-    display: grid;
-    gap: 1.5rem;
-    padding-block: clamp(2.5rem, 6vw, 4rem);
-  }
-
-  .features article {
-    background: white;
-    border-radius: 1rem;
-    padding: 1.75rem;
-    box-shadow: 0 10px 30px -22px rgba(15, 23, 42, 0.4);
-    text-align: left;
-  }
-
-  .features h2 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
-
-  @media (min-width: 780px) {
+  <style>
     .hero {
-      text-align: left;
+      display: grid;
+      gap: 1.5rem;
+      padding-block: clamp(3rem, 8vw, 5rem);
+      text-align: center;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.85rem;
+      color: rgba(15, 23, 42, 0.65);
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 3.5rem);
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .lede {
+      font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+      color: rgba(15, 23, 42, 0.72);
+      margin: 0 auto;
+      max-width: 50ch;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      font-weight: 600;
+      transition: transform 150ms ease, box-shadow 150ms ease;
+      background: white;
+    }
+
+    .cta.primary {
+      background: linear-gradient(135deg, #2563eb, #9333ea);
+      color: white;
+      border: none;
+      box-shadow: 0 10px 20px -12px rgba(79, 70, 229, 0.7);
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -16px rgba(15, 23, 42, 0.4);
     }
 
     .features {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      display: grid;
+      gap: 1.5rem;
+      padding-block: clamp(2.5rem, 6vw, 4rem);
     }
-  }
-</style>
+
+    .features article {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.75rem;
+      box-shadow: 0 10px 30px -22px rgba(15, 23, 42, 0.4);
+      text-align: left;
+    }
+
+    .features h2 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .hero-gradient {
+        background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+    .brownish-gradient {
+        background: linear-gradient(180deg, #FDFBF8 0%, #F5EFE6 100%);
+    }
+
+    @media (min-width: 780px) {
+      .hero {
+        text-align: left;
+      }
+
+      .features {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  </style>
+</BaseLayout>
