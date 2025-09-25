@@ -1,43 +1,69 @@
-# Website
+# WM Smile Generation Uganda Limited - Website
 
-This repository contains a base [Astro](https://astro.build) project scaffolded for Smile Generation Uganda. It includes:
+This repository contains the official website for WM Smile Generation Uganda Limited, a non-profit organization dedicated to nurturing minds and growing futures for the children and youth of Uganda.
 
-- Astro 4 with TypeScript strict mode
-- A clean `BaseLayout` component and a styled landing page
-- Node-friendly `.gitignore`, favicon, and project metadata
+The website is built with [Astro](https://astro.build) and styled with [Tailwind CSS](https://tailwindcss.com/).
 
-## Getting started
+## Features
 
-1. Install dependencies:
-	```powershell
-	npm install
-	```
-2. Start the local dev server (runs at http://localhost:4321 by default):
-	```powershell
-	npm run dev
-	```
-3. Create a production build:
-	```powershell
-	npm run build
-	```
-4. Preview the production build locally:
-	```powershell
-	npm run preview
-	```
+-   **Astro 4**: A modern web framework for building fast, content-focused websites.
+-   **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+-   **Content Collections**: Astro's built-in feature for managing content, used for the blog.
+-   **MDX Support**: Blog posts are written in MDX for a rich content experience.
+-   **Responsive Design**: Fully responsive layout for all devices.
+-   **Static & Dynamic Pages**: Includes static pages (About, Contact, etc.) and a dynamic, paginated blog.
 
-## Project structure
+## Getting Started
+
+1.  **Install dependencies:**
+    ```powershell
+    npm install
+    ```
+2.  **Start the local development server:**
+    (Runs at http://localhost:4321 by default)
+    ```powershell
+    npm run dev
+    ```
+3.  **Create a production build:**
+    ```powershell
+    npm run build
+    ```
+4.  **Preview the production build locally:**
+    ```powershell
+    npm run preview
+    ```
+
+## Project Structure
 
 ```
+.
+├── design/                 # HTML design mockups
 ├── public/
 │   └── favicon.svg
 ├── src/
-│   ├── env.d.ts
+│   ├── components/         # Reusable Astro components
+│   │   └── BlogPostCard.astro
+│   ├── content/            # Astro Content Collections
+│   │   ├── blog/
+│   │   │   └── first-library-opening.mdx
+│   │   └── config.ts       # Collection schema definitions
 │   ├── layouts/
 │   │   └── BaseLayout.astro
-│   └── pages/
-│       └── index.astro
+│   ├── pages/
+│   │   ├── about.astro
+│   │   ├── blog/
+│   │   │   ├── [...page].astro   # Paginated blog index
+│   │   │   └── [slug].astro      # Dynamic blog post pages
+│   │   ├── contact.astro
+│   │   ├── donate.astro
+│   │   ├── index.astro
+│   │   ├── our-mission.astro
+│   │   ├── our-partners.astro
+│   │   └── partnership.astro
+│   └── styles/
 ├── astro.config.mjs
 ├── package.json
+├── tailwind.config.mjs
 ├── tsconfig.json
 └── README.md
 ```
