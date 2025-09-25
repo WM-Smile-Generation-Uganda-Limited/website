@@ -1,0 +1,162 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Donate | WM Smile Generation Uganda Limited">
+  <main>
+    <!-- Page Header Section -->
+    <section
+      class="relative h-64 flex items-center justify-center text-center text-white"
+    >
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070&auto=format&fit=crop');"
+      >
+      </div>
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="relative px-4">
+        <h1 class="text-4xl md:text-5xl font-bold">Make a Difference Today</h1>
+        <p class="text-lg mt-2">
+          Your contribution directly fuels our projects and brings smiles to
+          Uganda's youth.
+        </p>
+      </div>
+    </section>
+
+    <!-- Donation Campaigns Section -->
+    <section class="py-20 md:py-28 brownish-gradient">
+      <div class="container mx-auto px-6">
+        <div class="text-center max-w-4xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+            Choose a Campaign to Support
+          </h2>
+          <p class="text-lg text-stone-700 leading-relaxed">
+            Every donation, no matter the size, creates a ripple of positive
+            change. Below are our active campaigns where you can contribute
+            directly to a cause that resonates with you. Your generosity
+            empowers education, protects our environment, and supports the most
+            vulnerable children.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Campaign 1: Educate 100 Students -->
+          <div
+            class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop"
+              class="w-full h-56 object-cover"
+              alt="Ugandan students in a classroom"
+            />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-2xl font-bold text-green-800 mb-3">
+                Educate the Futures of 100 Ugandan Students
+              </h3>
+              <p class="text-stone-700 leading-relaxed mb-6 flex-grow">
+                Help us provide school fees, uniforms, and supplies for 100
+                students, giving them the tools they need to succeed and build a
+                brighter future.
+              </p>
+              <a
+                href="https://www.gofundme.com/f/raise-funds-to-educate-the-futures-of-100-ugandan-students"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full text-center bg-green-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg"
+              >
+                Donate Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Campaign 2: Greener Uganda -->
+          <div
+            class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1620223504152-860e17346935?q=80&w=2070&auto=format&fit=crop"
+              class="w-full h-56 object-cover"
+              alt="Person planting a tree seedling"
+            />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-2xl font-bold text-green-800 mb-3">
+                Help Us Grow A Greener Uganda
+              </h3>
+              <p class="text-stone-700 leading-relaxed mb-6 flex-grow">
+                Support our tree-planting initiative to combat deforestation,
+                improve air quality, and teach the next generation about
+                environmental stewardship.
+              </p>
+              <a
+                href="https://www.gofundme.com/f/birthday-tree-planting-cakehelp-us-grow-a-greener-uganda"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full text-center bg-green-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg"
+              >
+                Donate Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Campaign 3: Refugee Children -->
+          <div
+            class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1541692647658-a81a98532934?q=80&w=2070&auto=format&fit=crop"
+              class="w-full h-56 object-cover"
+              alt="Smiling refugee children"
+            />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-2xl font-bold text-green-800 mb-3">
+                Supporting Refugee Children
+              </h3>
+              <p class="text-stone-700 leading-relaxed mb-6 flex-grow">
+                Provide essential aid, including food, shelter, and
+                trauma-informed educational support for refugee children who
+                have been displaced from their homes.
+              </p>
+              <a
+                href="https://www.gofundme.com/f/supporting-refugee-children"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full text-center bg-green-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg"
+              >
+                Donate Now
+              </a>
+            </div>
+          </div>
+
+          <!-- Campaign 4: Kagadi Kenga -->
+          <div
+            class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col transform hover:-translate-y-2 transition-transform duration-300"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1583913469133-c7c225bd2433?q=80&w=2070&auto=format&fit=crop"
+              class="w-full h-56 object-cover"
+              alt="Children in a rural Ugandan community"
+            />
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-2xl font-bold text-green-800 mb-3">
+                Bringing Hope and Education to Kagadi Kenga
+              </h3>
+              <p class="text-stone-700 leading-relaxed mb-6 flex-grow">
+                Fund the construction of a new classroom block and provide
+                learning materials for the remote community of Kagadi Kenga,
+                opening doors to education.
+              </p>
+              <a
+                href="https://www.gofundme.com/f/bringing-hope-and-education-to-kagadi-kenga"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full text-center bg-green-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg"
+              >
+                Donate Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
