@@ -28,8 +28,8 @@ const { title } = Astro.props;
 	
 					<!-- Desktop Menu -->
 					<div class="hidden md:flex items-center space-x-6">
-						<a href="#" class="hover:text-green-200 transition duration-300">Home</a>
-						<a href="#about" class="hover:text-green-200 transition duration-300">About Us</a>
+						<a href="/" class="hover:text-green-200 transition duration-300">Home</a>
+						<a href="/about" class="hover:text-green-200 transition duration-300">About Us</a>
 						<a href="#mission" class="hover:text-green-200 transition duration-300">Our Mission</a>
 						<a href="#" class="hover:text-green-200 transition duration-300">Blog</a>
 						<a href="#" class="hover:text-green-200 transition duration-300">Partnership</a>
@@ -50,8 +50,8 @@ const { title } = Astro.props;
 			</div>
 			<!-- Mobile Menu -->
 			<div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2">
-				<a href="#" class="block hover:bg-green-700 p-2 rounded">Home</a>
-				<a href="#about" class="block hover:bg-green-700 p-2 rounded">About Us</a>
+				<a href="/" class="block hover:bg-green-700 p-2 rounded">Home</a>
+				<a href="/about" class="block hover:bg-green-700 p-2 rounded">About Us</a>
 				<a href="#mission" class="block hover:bg-green-700 p-2 rounded">Our Mission</a>
 				<a href="#" class="block hover:bg-green-700 p-2 rounded">Blog</a>
 				<a href="#" class="block hover:bg-green-700 p-2 rounded">Partnership</a>
@@ -70,7 +70,7 @@ const { title } = Astro.props;
 					<div>
 						<h4 class="text-xl font-bold mb-4">Quick Links</h4>
 						<ul class="space-y-2">
-							<li><a href="#about" class="hover:text-green-200 transition">About Us</a></li>
+							<li><a href="/about" class="hover:text-green-200 transition">About Us</a></li>
 							<li><a href="#" class="hover:text-green-200 transition">Blog</a></li>
 							<li><a href="#" class="hover:text-green-200 transition">Become a Partner</a></li>
 							<li><a href="#" class="hover:text-green-200 transition">Contact Us</a></li>
@@ -99,19 +99,23 @@ const { title } = Astro.props;
 	// Mobile Menu Toggle
 	const mobileMenuButton = document.getElementById('mobile-menu-button');
 	const mobileMenu = document.getElementById('mobile-menu');
-	mobileMenuButton.addEventListener('click', () => {
-		mobileMenu.classList.toggle('hidden');
-	});
+	if (mobileMenuButton && mobileMenu) {
+		mobileMenuButton.addEventListener('click', () => {
+			mobileMenu.classList.toggle('hidden');
+		});
+	}
 
 	// Sticky header background change on scroll
 	const header = document.getElementById('header');
-	window.onscroll = function() {
-		if (window.pageYOffset > 50) {
-			header.classList.add('bg-green-900');
-		} else {
-			header.classList.remove('bg-green-900');
-		}
-	};
+	if (header) {
+		window.onscroll = function() {
+			if (window.pageYOffset > 50) {
+				header.classList.add('bg-green-900');
+			} else {
+				header.classList.remove('bg-green-900');
+			}
+		};
+	}
 </script>
 <style is:global>
 	body {
