@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Contact Us | WM Smile Generation Uganda Limited">
+    <main>
+        <!-- Page Header Section -->
+        <section class="relative h-64 flex items-center justify-center text-center text-white">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1600x400/8FBC8F/FFFFFF?text=Get+In+Touch');"></div>
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative px-4">
+                <h1 class="text-4xl md:text-5xl font-bold">Contact Us</h1>
+                <p class="text-lg mt-2">We'd love to hear from you. Let's connect.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form and Info Section -->
+        <section class="py-20 md:py-28 brownish-gradient">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <!-- Contact Information -->
+                    <div class="text-center md:text-left">
+                         <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">Get in Touch</h2>
+                         <p class="text-lg text-stone-700 leading-relaxed mb-8">
+                            Whether you have a question, a partnership proposal, or simply want to learn more about our work, we are here to help. Reach out to us through the form or using the contact details below.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-center md:justify-start space-x-4">
+                                <div class="bg-green-100 p-3 rounded-full">
+                                    <svg class="h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" /></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-stone-800">Our Location</h3>
+                                    <p class="text-stone-600">Kampala, Uganda</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center md:justify-start space-x-4">
+                                <div class="bg-green-100 p-3 rounded-full">
+                                    <svg class="h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 2.884l7.997 3V14a2 2 0 01-2 2H4a2 2 0 01-2-2V5.884zM10 5L4 7.5v7l6 3 6-3v-7L10 5z" /></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-stone-800">Email Us</h3>
+                                    <a href="mailto:info@wmsmilegeneration.org" class="text-stone-600 hover:text-green-700">info@wmsmilegeneration.org</a>
+                                </div>
+                            </div>
+                             <div class="flex items-center justify-center md:justify-start space-x-4">
+                                <div class="bg-green-100 p-3 rounded-full">
+                                    <svg class="h-6 w-6 text-green-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" /></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-stone-800">Call Us</h3>
+                                    <p class="text-stone-600">+256 123 456789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg border">
+                        <form action="#" method="POST">
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                    <input type="text" name="name" id="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" name="email" id="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
+                                </div>
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                                    <input type="text" name="subject" id="subject" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                    <textarea id="message" name="message" rows="5" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full bg-green-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300 transform hover:scale-105 shadow-lg">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <style>
+        .brownish-gradient {
+            background: linear-gradient(180deg, #FDFBF8 0%, #F5EFE6 100%);
+        }
+    </style>
+</BaseLayout>
