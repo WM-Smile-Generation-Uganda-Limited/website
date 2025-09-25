@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPostCard from '../../components/BlogPostCard.astro';
+
+const posts = await getCollection('blog');
+---
+<BaseLayout title="Blog | WM Smile Generation Uganda Limited">
+    <main>
+        <!-- Page Header Section -->
+        <section class="relative h-64 flex items-center justify-center text-center text-white">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://placehold.co/1600x400/2E8B57/FFFFFF?text=Our+Stories');"></div>
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative px-4">
+                <h1 class="text-4xl md:text-5xl font-bold">From the Field</h1>
+                <p class="text-lg mt-2">Insights, successes, and updates directly from our work in Uganda.</p>
+            </div>
+        </section>
+
+        <!-- Blog Grid Section -->
+        <section class="py-20 md:py-28 brownish-gradient">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {posts.map(post => (
+                        <BlogPostCard post={post} />
+                    ))}
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <style>
+        .brownish-gradient {
+            background: linear-gradient(180deg, #FDFBF8 0%, #F5EFE6 100%);
+        }
+    </style>
+</BaseLayout>
