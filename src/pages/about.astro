@@ -100,6 +100,155 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
         </section>
 
+
+        <!-- Our Team Section -->
+        <section class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-12 text-center">Our Team</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Joseph Bumpenje -->
+                    <div class="bg-stone-50 rounded-lg shadow-md p-6 text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="/images/ceo.jfif" alt="Photo of JOSEPH BUMPENJE">
+                        <h3 class="text-xl font-bold text-green-800 mb-1">JOSEPH  BUMPENJE</h3>
+                        <p class="font-semibold mb-2">CEO & Founder</p>
+                        <p class="text-stone-700 text-sm mb-4">Our dedicated educator and founder committed to providing vulnerable children in Uganda with access to free education. Beyond education, he is passionate about raising environmental awareness, integrating sustainability and conservation into the NGO’s mission. With a background as a high school math teacher and community leader, Joseph drives efforts to support children and families facing hardship. He also fosters children and invests personally in their education.</p>
+                        <a href="https://www.linkedin.com/in/joseph-bumpenje-146451263/" target="_blank" class="text-gray-500 hover:text-gray-700">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- Ornella Gigante -->
+                    <div class="bg-stone-50 rounded-lg shadow-md p-6 flex flex-col text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Photo of ORNELLA GIGANTE">
+                        <h3 class="text-xl font-bold text-green-800 mb-1">ORNELLA GIGANTE</h3>
+                        <p class="font-semibold mb-2">Director of Operations</p>
+                        <p class="text-stone-700 text-sm mb-4 flex-grow">As a software engineer, she brings technical expertise and leadership to support the NGO’s mission and operations, leading teams and projects. She is also the founder & CEO of MindyCore, an EdTech company specializing in accessible digital solutions and educational software.  MindyCore is a partner and supporter of WM Smile Generation, helping to enhance its educational impact through technology and human support.</p>
+                        <div class="flex space-x-4 mt-auto">
+                            <a href="https://www.linkedin.com/in/ornella-gigante/" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:core@mindycore.com" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://mindycore.com/" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/ornellasofiagigante" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12.315 2c-4.04.002-4.55.018-6.138.09-1.58.072-2.67.34-3.62.723a4.73 4.73 0 00-1.712 1.712c-.384.95-.65 2.04-.724 3.62C.018 7.765 0 8.276 0 12.315s.018 4.55.09 6.138c.072 1.58.34 2.67.723 3.62a4.73 4.73 0 001.712 1.712c.95.384 2.04.65 3.62.724 1.588.072 2.098.09 6.138.09s4.55-.018 6.138-.09c1.58-.072 2.67-.34 3.62-.724a4.73 4.73 0 001.712-1.712c.384-.95.65-2.04.724-3.62.072-1.588.09-2.098.09-6.138s-.018-4.55-.09-6.138c-.072-1.58-.34-2.67-.724-3.62a4.73 4.73 0 00-1.712-1.712c-.95-.384-2.04-.65-3.62-.724C16.865 2.018 16.355 2 12.315 2zM8.27 12.315c0-2.23.91-4.25 2.37-5.71s3.48-2.37 5.71-2.37 4.25.91 5.71 2.37 2.37 3.48 2.37 5.71-.91 4.25-2.37 5.71-3.48 2.37-5.71 2.37-4.25-.91-5.71-2.37-2.37-3.48-2.37-5.71zm1.98-3.71a2.26 2.26 0 11-4.52 0 2.26 2.26 0 014.52 0zm-3.26 8.3a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                            <a href="https://x.com/GiganteOrnella" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Quan Nyugen -->
+                    <div class="bg-stone-50 rounded-lg shadow-md p-6 flex flex-col text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Photo of QUAN NYUGEN">
+                        <h3 class="text-xl font-bold text-green-800 mb-1">QUAN NYUGEN</h3>
+                        <p class="font-semibold mb-2">Website Administrator</p>
+                        <p class="text-stone-700 text-sm mb-4 flex-grow">[Insert your bio here 😊 ]</p>
+                    </div>
+                    <!-- Kayla Pillay -->
+                    <div class="bg-stone-50 rounded-lg shadow-md p-6 flex flex-col text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Photo of KAYLA PILLAY">
+                        <h3 class="text-xl font-bold text-green-800 mb-1">KAYLA PILLAY</h3>
+                        <p class="font-semibold mb-2">Content Specialist</p>
+                        <p class="text-stone-700 text-sm mb-4 flex-grow">A content specialist from South Africa that transforms the organization’s mission into compelling digital stories that inspire global action. With expertise in authentic storytelling and strategic engagement, Kayla ensures that the transformative work of WM Smile Generation is communicated professionally and effectively to a worldwide audience. Her focus is on driving sustained engagement and growth to support the NGO’s vision.</p>
+                        <div class="flex space-x-4 mt-auto">
+                            <a href="https://www.linkedin.com/in/kayla-pillay-a7b69b1b4/" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:kayla.pillay97@gmail.com" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Precious Pabalelo Matlala -->
+                    <div class="bg-stone-50 rounded-lg shadow-md p-6 flex flex-col text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Photo of PRECIOUS PABALELO MATLALA">
+                        <h3 class="text-xl font-bold text-green-800 mb-1">PRECIOUS PABALELO MATLALA</h3>
+                        <p class="font-semibold mb-2">Donations and Fundraising Lead</p>
+                        <p class="text-stone-700 text-sm mb-4 flex-grow">A skilled professional from Limpopo, South Africa, with qualifications in Tourism, Business Management, and added expertise in Human Rights, Environmental Law, Conservation, and Biodiversity. She brings extensive experience working across East and Southern Africa in operations, NGOs, and international organizations. Precious leads the donations and fundraising efforts in the organization, leveraging her expertise in event operations, stakeholder engagement, and project coordination. Passionate about humanitarian work, she is dedicated to creating opportunities for vulnerable children to overcome barriers and thrive while championing environmental conservation for a healthier future.</p>
+                        <div class="flex space-x-4 mt-auto">
+                            <a href="https://www.linkedin.com/in/precious-matlala-5a5a97166/" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:matlalaprecious63@gmail.com" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Muhammad Hanif Danladi -->
+                    <div class="bg-stone-50 rounded-lg shadow-md p-6 flex flex-col text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Photo of MUHAMMAD HANIF DANLADI">
+                        <h3 class="text-xl font-bold text-green-800 mb-1">MUHAMMAD HANIF DANLADI</h3>
+                        <p class="font-semibold mb-2">Coach and Content Creator</p>
+                        <p class="text-stone-700 text-sm mb-4 flex-grow">A software engineer with a humble heart and big dreams. He excels as an academic, entrepreneurship, and habits coach, helping individuals develop essential skills and mindset for success. Alongside his coaching talents, Muhammad is a creative content creator, combining his passions for AI-driven fashion design, graphic design, and poetry writing. He is deeply passionate about connecting with diverse talents and perspectives, inspiring collaboration and growth within WM Smile Generation Uganda.</p>
+                        <div class="flex space-x-4 mt-auto">
+                            <a href="https://www.linkedin.com/in/muhammad-hanif-danladi-90b969208/" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:hanifneonx@gmail.com" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://thrivempire.infinityfreeapp.com/?i=1" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://hanifbooks.42web.io/?i=1" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Davide Celentano -->
+                    <div class="bg-stone-50 rounded-lg shadow-md p-6 flex flex-col text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://via.placeholder.com/150" alt="Photo of DAVIDE CELENTANO">
+                        <h3 class="text-xl font-bold text-green-800 mb-1">DAVIDE CELENTANO</h3>
+                        <p class="font-semibold mb-2">Agro-Environmental Content Specialist</p>
+                        <p class="text-stone-700 text-sm mb-4 flex-grow">As a Agriculture Science and Technology specialist, he brings a global perspective shaped by years of living and traveling around the world. His passion for plants and nature has guided his career as an agronomist. At WM Smile Generation Uganda, Davide applies his expertise to create engaging content that educates and raises awareness about environmental issues and sustainable agriculture among young people in Uganda. He believes everything is about people and is dedicated to supporting the NGO’s mission through authentic and impactful storytelling.</p>
+                        <div class="flex space-x-4 mt-auto">
+                            <a href="https://www.linkedin.com/in/davide-celentano-b4851121b/" target="_blank" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:davidecelentano1@libero.it" class="text-gray-500 hover:text-gray-700">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Join Us CTA -->
         <section class="bg-green-700">
             <div class="container mx-auto px-6 py-16 text-center text-white">
