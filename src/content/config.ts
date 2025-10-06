@@ -7,7 +7,7 @@ const blogCollection = defineCollection({
     description: z.string(),
     author: z.string(),
     pubDate: z.string().transform((str) => new Date(str)),
-    category: z.string(),
+    category: z.enum(['Education', 'Conservation', 'Protecting Refugee Children', 'Community', 'Success Story', 'Volunteering']),
     image: z.string(),
   }),
 });
