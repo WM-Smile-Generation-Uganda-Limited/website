@@ -11,8 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
-    "astro": "^5.8.1"
+    "@astrojs/mdx": "^4.3.6",
+    "astro": "^5.14.1"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",
