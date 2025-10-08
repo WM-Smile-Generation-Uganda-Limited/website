@@ -141,11 +141,7 @@ const { title } = Astro.props;
 		};
 	}
 </script>
-<script type="module">
-	// Import client initializer via absolute /src path so Vite resolves it
-	import '@/lib/init-firebase.ts';
-	
- </script>
+<script src="/js/init-firebase.js" defer></script>
 <style is:global>
 	body {
 		font-family: 'Inter', sans-serif;
