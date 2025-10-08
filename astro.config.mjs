@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
+import { fileURLToPath } from 'url'; // Import the helper
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,6 +12,13 @@ export default defineConfig({
     // Enable additional image optimizations
     service: {
       entrypoint: 'astro/assets/services/sharp'
+    }
+  },
+    vite: {
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url))
+      }
     }
   }
 });
