@@ -87,7 +87,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                          <p class="text-lg text-stone-700 leading-relaxed">Ready to explore a partnership? We'd love to hear from you. Please fill out the form, and our partnership coordinator will get in touch to discuss how we can work together to create a brighter future for Uganda's youth.</p>
                     </div>
                     <div class="bg-gray-50 p-8 rounded-lg shadow-lg border">
-                        <form action="#" method="POST">
+                        <form id="partnershipForm">
                             <div class="space-y-6">
                                 <div>
                                     <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
@@ -112,11 +112,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                                 </div>
                             </div>
                         </form>
+                        <p id="partnerFormStatus" class="mt-4 text-sm"></p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script type="module" src="/src/scripts/partnership-form.ts"></script>
     <style>
         .brownish-gradient {
             background: linear-gradient(180deg, #FDFBF8 0%, #F5EFE6 100%);

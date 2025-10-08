@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.6",
-    "astro": "^5.14.1"
+    "astro": "^5.14.1",
+    "firebase": "^12.3.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",

@@ -39,7 +39,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                                 </div>
                                 <div>
                                     <h3 class="font-bold text-stone-800">Email Us</h3>
-                                    <a href="mailto:webmaster@wmsmilegeneration.org" class="text-stone-600 hover:text-green-700">info@wmsmilegeneration.org</a>
+                                    <a href="mailto:webmaster@wmsmilegeneration.org" class="text-stone-600 hover:text-green-700">webmaster@wmsmilegeneration.org</a>
                                 </div>
                             </div>
                              <div class="flex items-center justify-center md:justify-start space-x-4">
@@ -55,7 +55,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     </div>
                     <!-- Contact Form -->
                     <div class="bg-white p-8 rounded-lg shadow-lg border">
-                        <form action="#" method="POST">
+                        <form id="contactForm">
                             <div class="space-y-6">
                                 <div>
                                     <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
@@ -80,11 +80,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                                 </div>
                             </div>
                         </form>
+                        <p id="formStatus" class="mt-4 text-sm"></p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script type="module" src="/src/scripts/contact-form.ts"></script>
     <style>
         .brownish-gradient {
             background: linear-gradient(180deg, #FDFBF8 0%, #F5EFE6 100%);
