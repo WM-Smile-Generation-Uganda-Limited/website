@@ -118,7 +118,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </div>
         </section>
     </main>
-    <script type="module" src="/src/scripts/partnership-form.ts"></script>
+    <script type="module">
+        import '/src/scripts/partnership-form.ts';
+    </script>
     <style>
         .brownish-gradient {
             background: linear-gradient(180deg, #FDFBF8 0%, #F5EFE6 100%);
