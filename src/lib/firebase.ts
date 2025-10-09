@@ -2,13 +2,13 @@
 // Dynamically imports Firebase only in the browser to avoid SSR/window issues.
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDHsY2V-jQsAt7nFwdyRqXl-rNtkWbGc8U",
-  authDomain: "wm-smile-generation-uganda.firebaseapp.com",
-  projectId: "wm-smile-generation-uganda",
-  storageBucket: "wm-smile-generation-uganda.firebasestorage.app",
-  messagingSenderId: "791580202941",
-  appId: "1:791580202941:web:11c56beb1f0185bb6de4d4",
-  measurementId: "G-PFSD62TYHS",
+  apiKey: "AIzaSyCHqDHGx_Tftybm_xlEUtjZOg4v7A9vO7M",
+  authDomain: "wm-smile-generation-ugan-9d0c4.firebaseapp.com",
+  projectId: "wm-smile-generation-ugan-9d0c4",
+  storageBucket: "wm-smile-generation-ugan-9d0c4.firebasestorage.app",
+  messagingSenderId: "225839639421",
+  appId: "1:225839639421:web:fc9c53ad1e8efb61263a14",
+  measurementId: "G-X5TTSE7XTV"
 };
 
 let initialized = false;
